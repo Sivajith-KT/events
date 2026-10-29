@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>accessing dom using tag name</h1>
+    <p>first paragraph</p>
+    <p>second paragraph</p>
+
+    <script>
+        const paragraphs=document.getElementsByTagName('p')
+        console.log(paragraphs)
+        paragraphs[0].style.color="blue"
+        paragraphs[1].style.color="green"
+    </script>
+</body>
+</html>

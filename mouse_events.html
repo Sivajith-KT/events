@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 150px;
+            height: 150px;
+            background-color: blue;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: aqua;
+        }
+        .output{
+            width: 400px;
+            height: 150px;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>mouse event</h1>
+    <div class="box" id="event_box">use all mouse events on me</div>
+    <div class="output" id="output"></div>
+
+    <script>
+        const event_box=document.getElementById('event_box')
+        const output_box=document.getElementById('output')
+
+        event_box.addEventListener('click',()=>{
+            output_box.innerHTML="click event happened"
+        })
+        event_box.addEventListener('dblclick',()=>{
+            output_box.innerHTML="double click event happened"
+        })
+        event_box.addEventListener('mouseover',()=>{
+            output_box.innerHTML="mouseover event happened"
+        })
+        event_box.addEventListener('mouseout',()=>{
+            output_box.innerHTML="mouseout event happened"
+        })
+        event_box.addEventListener('mouseup',()=>{
+            output_box.innerHTML="mouseup event happened"
+        })
+    </script>
+</body>
+</html>
